@@ -175,23 +175,23 @@ KEYS = [
         #           0          "
         Key("け", "わ", None, "ゎ",(KeyXPosition.OuterMostColumn, KeyYPosition.SecondTop), Side.Left),
         #           q Q A 
-        Key("ち", "た", "じゃ", "ちょ",(KeyXPosition.PinkyColumn, KeyYPosition.Top), Side.Left),
-        Key("つ", "ぬ", None, "っ",(KeyXPosition.PinkyColumn, KeyYPosition.SecondTop), Side.Left),
+        Key("ち", "た", "きょ", "ちょ",(KeyXPosition.PinkyColumn, KeyYPosition.Top), Side.Left),
+        Key("つ", "ぬ", "ず", "っ",(KeyXPosition.PinkyColumn, KeyYPosition.SecondTop), Side.Left),
         #           `     ~     W 
         Key("て", "ろ", "りょ", "てる",(KeyXPosition.RingColumn, KeyYPosition.Top), Side.Left),
         #           b    B      S   
-        Key("と", "こ", "きょ", "こと",(KeyXPosition.RingColumn, KeyYPosition.SecondTop), Side.Left),
+        Key("と", "こ", "ご", "ど",(KeyXPosition.RingColumn, KeyYPosition.SecondTop), Side.Left),
         #           2   -      X
-        Key("さ", "ふ", None, "しゃ",(KeyXPosition.RingColumn, KeyYPosition.ThirdTop), Side.Left),
+        Key("さ", "ふ", "ぶ", "しゃ",(KeyXPosition.RingColumn, KeyYPosition.ThirdTop), Side.Left),
         #          =     +     E
         Key("い", "へ", "れる", "ぃ",(KeyXPosition.MiddleColumn, KeyYPosition.Top), Side.Left),
         #           t T D
-        Key("し", "か", "きゃ", "しょ",(KeyXPosition.MiddleColumn, KeyYPosition.SecondTop), Side.Left),
-        Key("そ", "あ", "ぁ", None,(KeyXPosition.MiddleColumn, KeyYPosition.ThirdTop), Side.Left),
+        Key("し", "か", "しゃ", "しょ",(KeyXPosition.MiddleColumn, KeyYPosition.SecondTop), Side.Left),
+        Key("そ", "あ", "ぁ", "りょ",(KeyXPosition.MiddleColumn, KeyYPosition.ThirdTop), Side.Left),
         #          r    R     F
-        Key("は", "す", "しゅ", "ひゃ",(KeyXPosition.IndexColumn, KeyYPosition.Top), Side.Left),
+        Key("は", "す", "しゅ", "が",(KeyXPosition.IndexColumn, KeyYPosition.Top), Side.Left),
         #          4    $     V
-        Key("ひ", "う", "ぅ", "ひょ",(KeyXPosition.IndexColumn, KeyYPosition.SecondTop), Side.Left),
+        Key("ひ", "う", "ぅ", "び",(KeyXPosition.IndexColumn, KeyYPosition.SecondTop), Side.Left),
         Key(None, None, None, None, (KeyXPosition.ThumbOuter, None), Side.Left),
         Key(None, None, None, None, (KeyXPosition.ThumbMiddle, None), Side.Left),
         Key(None, None, None, None, (KeyXPosition.ThumbInner, None), Side.Left),
@@ -200,7 +200,7 @@ KEYS = [
         #           5 & M 
         Key("も", "え", "ぇ", "む",(KeyXPosition.IndexColumn, KeyYPosition.SecondTop), Side.Right),
         #           {    {    I
-        Key("に", "゛", "「", "にゅ",(KeyXPosition.MiddleColumn, KeyYPosition.Top), Side.Right),
+        Key("に", "゛", "「", "りょ",(KeyXPosition.MiddleColumn, KeyYPosition.Top), Side.Right),
         #           y Y K 
         Key("の", "ん", "じゅ", None,(KeyXPosition.MiddleColumn, KeyYPosition.SecondTop), Side.Right),
         #           6 ( <
@@ -208,23 +208,23 @@ KEYS = [
         #           ] } O
         Key("ら", "゜", "」", "じゃ",(KeyXPosition.RingColumn, KeyYPosition.Top), Side.Right),
         #           g G L
-        Key("り", "き", "きゅ", "りゅ",(KeyXPosition.RingColumn, KeyYPosition.SecondTop), Side.Right),
+        Key("り", "き", "ぎ", "だ",(KeyXPosition.RingColumn, KeyYPosition.SecondTop), Side.Right),
         # to do: assing wo somewhere
         #           7 )
         Key("る", "や", "ゃ", "。",(KeyXPosition.RingColumn, KeyYPosition.ThirdTop), Side.Right),
         #           p    P     N
-        Key("み", "せ", "しゅ", "みょ",(KeyXPosition.PinkyColumn, KeyYPosition.Top), Side.Right),
+        Key("み", "せ", "しゅ", "で",(KeyXPosition.PinkyColumn, KeyYPosition.Top), Side.Right),
         #           8    *     ?
         Key("め", "ゆ", "ゅ", "？",(KeyXPosition.PinkyColumn, KeyYPosition.SecondTop), Side.Right),
         #    ;     ±    °   :
-        Key("れ", None, None, None,(KeyXPosition.OuterMostColumn, KeyYPosition.Top), Side.Right),
+        Key("れ", None, None, "べ",(KeyXPosition.OuterMostColumn, KeyYPosition.Top), Side.Right),
         
         
         Key(None, "よ", "ょ", None,(KeyXPosition.OuterMostColumn, KeyYPosition.SecondTop), Side.Right),
 
         Key(None, None, None, None, (KeyXPosition.ThumbOuter, None), Side.Right),
         #           h H 
-        Key(None, "く", "ぎょ", "ー", (KeyXPosition.ThumbMiddle, None), Side.Right),
+        Key(None, "く", "げ", "ー", (KeyXPosition.ThumbMiddle, None), Side.Right),
         Key(None, None, None, None, (KeyXPosition.ThumbInner, None), Side.Right),
         
         
