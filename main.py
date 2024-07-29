@@ -337,6 +337,7 @@ class ImageSpaceRect:
 
 
 
+MODIFIED = 'がぎぐげござじずぜぞだぢづでどびぶべぱぴぷぺ'
 
 def draw_keyboards():
     """
@@ -380,24 +381,38 @@ def draw_keyboards():
     both_font = ImageFont.truetype("./j.ttf", 19)
     left_font = ImageFont.truetype("./j.ttf", 19)
     cont_font = ImageFont.truetype("./j.ttf", 12)
+
+    normal = []
+    modified = []
+    small = []
+    bigram = []
+    punct = []
+
     # Draw the keys
     for key in KEYS:
 
         def get_fill(symbol: str) -> tuple[int, int, int]:
+            if symbol in MODIFIED:
+                modified.append(symbol)
+                return (0, 128, 0)
             if len(symbol) == 2:
-                # light blue
-                return (173, 216, 230)
+                bigram.append(symbol)
+                # purple
+                return (36, 36, 96)
 
             if is_small(symbol):
+                small.append(symbol)
                 # orange
                 return (255, 165, 0)
             elif is_extended(symbol):
                 # gray
                 return (200, 200, 200)
             elif is_punctuation(symbol):
-                # green
-                return (0, 128, 0)
+                punct.append(symbol)
+                # red
+                return (128, 0, 0)
             else:
+                normal.append(symbol)
                 return (0, 0, 0)
 
         square = key.square()
@@ -460,6 +475,30 @@ def draw_keyboards():
 
     # Convert the PIL image to Numpy array and switch from RGB to BGR
     img = cv2.cvtColor(np.array(pil_image), cv2.COLOR_RGB2BGR)
+
+    # print 
+    print("normal")
+    for k in normal:
+        print(k)
+    print()
+    print("modified")
+    for k in modified:
+        print(k)
+    print()
+    print("small")
+    for k in small:
+        print(k)
+    print()
+    print("bigram")
+    for k in bigram:
+        print(k)
+    print()
+    print("punct")
+    for k in punct:
+        print(k)
+    print()
+
+
             
 
 
